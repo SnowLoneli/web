@@ -1,0 +1,164 @@
+/* Fondo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://i.pinimg.com/736x/8b/e4/89/8be489721643446d7924795e51bcfb38.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Fondo opaco para el contenido principal */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa de opacidad */
+    z-index: -1; /* Envía el fondo al fondo */
+}
+
+/* Estilo para los encabezados */
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+    border: 4px solid black
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+/* Estilo para el formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para los campos de entrada y botones */
+input, select, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botón principal */
+button {
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+    transform: scale(1.05);
+}
+
+/* Botón de limpiar registros */
+button[name="limpiar_registros"] {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}
+
+button[name="limpiar_registros"]:hover {
+    background-color: #a71d2a; /* Rojo más oscuro */
+    transform: scale(1.05);
+}
+
+/* Estilo para las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Colores para las filas alternadas */
+tr:nth-child(even) {
+    background-color: rgba(0, 123, 255, 0.1); /* Azul claro */
+}
+
+tr:hover {
+    background-color: rgba(0, 123, 255, 0.2); /* Azul más intenso */
+}
+
+/* Estilo para la tabla de totales */
+.totales {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.totales th {
+    text-align: left;
+}
+
+.ganancia {
+    color: green;
+}
+
+.perdida {
+    color: red;
+}
+
+/* Botones de acción */
+button {
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+/* Estilo para centrar contenido */
+.center {
+    text-align: center;
+}
+
+/* Estilo para mensajes o alertas */
+.alert {
+    padding: 15px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Añadir animación para transiciones suaves */
+button {
+    transition: all 0.3s ease-in-out;
+}
